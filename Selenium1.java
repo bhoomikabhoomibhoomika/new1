@@ -40,15 +40,7 @@ public class Selenium1 {
 	    }
 	    int count=driver.findElements(By.xpath("//tr[@class='comparision_other_attribute_row']")).size();
 	    //System.out.println(count);
-	    for(int i=0;i<count;i++)
-	    {
-	    	String weight=driver.findElements(By.xpath("//tr[@class='comparision_other_attribute_row']//th")).get(i).getText();
-	    	if(weight.equalsIgnoreCase("Item weight"))
-	    	{
-	    		System.out.println(driver.findElements(By.xpath("//td[2]//--span[@class='a-size-base a-color-base']")).get(i).getText());
-	    		break;
-	    	}
-	    }
+	   
 	    
 	}
 	
