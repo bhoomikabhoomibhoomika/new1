@@ -10,7 +10,7 @@ public class Selenium1 {
 		// TODO Auto-generated method stub
 		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
-        driver.get("https://www.google.com/");
+        driver.get("https://www.amazon.in/");
 		driver.manage().window().maximize();
 		driver.findElement(By.xpath("//input[@class='gLFyf gsfi']")).sendKeys("selenium drivers");
 	    //driver.findElement(By.cssSelector("input[class='gNO89b']")).click();
